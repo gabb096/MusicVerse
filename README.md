@@ -1,3 +1,3 @@
 # MusicVerseTest
 
-https://gabb096.github.io/MusicVerseTest/Index.html
+https://gabb096.github.io/MusicVerse/
