@@ -107,14 +107,13 @@ h2{
 }
 #VideoFrame{
     position: relative;
-    top: calc(12vw * -1);
+    top: calc(44vw * -1);
 }
-#TrailerADV{
+#Video{
     position: relative;
-    top: calc(45vw * -1);
-    color: var(--Green);
-    font-size: 6vw;
-    font-family: "Stapel medium";
+    width: 57vw; 
+    height: 32vw; 
+    background-color: aliceblue;
 }
 .label{
     position: relative;

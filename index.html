@@ -9,18 +9,16 @@
     <link rel="stylesheet" href="Style.css">
 <head>    
 <body>
-    <div id="Animation">
-        <img id="StartLogo" src="Img/LOGO.png" ></img>
-    </div>
-
     <div><!--  contenitore di supporto  -->
         <div style="height: var(--BarHeight);"></div> <!-- spessore  -->
         <div id="Home" style="height: 100vh; border: 5px solid aliceblue; color: var(--Green);"> Home</div>
 
         <div id="StoryDiv" style="height: auto;">
             <img id="StoryFrame" src="Img/cornice testo storia composto 72.png" style="width: 100vw;"></img>
+            <div id="Video">
+                <iframe src="https://www.youtube.com//embed/y2ECgOhoDGs" style="width: 57vw; height: 32vw;"></iframe>
+            </div>
             <img id="VideoFrame" src="Img/CORNICE trailer 72.png" style="width: 100vw;"></img>
-            <div id="TrailerADV">Trailer coming soon</div>   
         </div>
 
         <div id="RoadmapDiv" style="height: 50vw; border: 5px solid aliceblue; color: var(--Green);"> 
@@ -54,6 +52,10 @@
             <div class="MenuItem"> <h2>Rarity</h2> </div>
             <div class="MenuItem"> <h2>Team</h2> </div>
         </div>
+
+        <div id="Animation">
+            <img id="StartLogo" src="Img/LOGO.png" ></img>
+        </div>    
     </div>
     <script src="Script.js"></script>
 </body>
