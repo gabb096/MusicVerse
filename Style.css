@@ -105,16 +105,49 @@ h2{
     align-items: center;
     justify-content: center;
 }
-#VideoFrame{
+#StoryFrame{
+    display: grid;
+}
+#StoryLabel{
+    grid-column: 1;
+    grid-row: 1;
     position: relative;
-    top: calc(44vw * -1);
+    left: 31vw;
+    color: var(--Green);
+    font-size: 5vw;
+    font-family: "Stapel medium";   
+}
+#StoryImg{
+    grid-column: 1;
+    grid-row: 1;
+}
+#StoryText{
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    left: 13vw;
+    top: 40vw;
+    width: 73vw;
+    color: var(--White); 
+    font-size: 2.5vw; 
+    font-family: "Stapel medium";
 }
 #Video{
-    position: relative;
-    width: 57vw; 
-    height: 32vw; 
-    background-color: aliceblue;
+    display: grid;
 }
+#VideoFrame{
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    bottom: 0.5vw;
+}
+#VideoSource{
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    top: 1.5vw;
+    left: 23vw;
+} 
 .label{
     position: relative;
     left:20vw;
