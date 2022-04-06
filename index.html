@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="Style.css">
 <head>    
 <body>
-    <div><!--  contenitore di supporto  -->
+    <!--  contenitore di supporto  -->
         <div style="height: var(--BarHeight);"></div> <!-- spessore  -->
         <div id="Home" style="height: 100vh; border: 5px solid aliceblue; color: var(--Green);"> Home</div>
 
-        <div id="StoryDiv" style="height: auto;">
+        <div id="StoryDiv" style="height: auto;"> <!-- "Fatto" -->
             
         <div id="StoryFrame">
             <img id="StoryImg" src="Img/cornice testo storia composto 72.png" style=" width: 100vw;"></img>
@@ -33,7 +33,7 @@
             <div id="Video">
                 <img id="VideoFrame" src="Img/CORNICE trailer 72.png" style="width: 100vw;"></img>
                
-                <iframe id="VideoSource" src="https://www.youtube.com//embed/y2ECgOhoDGs" style="width: 55vw; height: 30vw; border-radius: 2vw;"></iframe>
+                <iframe id="VideoSource" src="https://www.youtube.com//embed/dQw4w9WgXcQ?autoplay=1&mute=1" allow='autoplay' style="width: 55vw; height: 30vw; border-radius: 2vw;"></iframe>
             </div>
            
             
@@ -45,12 +45,25 @@
             </div> 
         </div>
 
-        <div id="CharactersDiv" style="height: 50vw; border: 5px solid aliceblue; color: var(--Green);"> 
+        <div id="CharactersDiv"> 
             <div id="CharactersLabel" class="label">CHARACTERS</div> 
+                <div id="CharacterImg"></div>
+                <div id="CharacterStory"></div>
+                <img id="CharacterFrame" src="Img/forma personaggi.png" style=" width: 100vw;"></img>
+                <div id="CharacterSelector">
+                    <div class="CharacterMiniImg"></div>
+                    <div class="CharacterMiniImgDouble"></div>
+                    <div class="CharacterMiniImg"></div>
+                    <div class="CharacterMiniImg"></div>
+                    <div class="CharacterMiniImg"></div>
+                    <div class="CharacterMiniImgDouble"></div>
+                    <div class="CharacterMiniImg"></div>
+                </div>
         </div>
 
         <div id="RarityDiv" style="height: 50vw; border: 5px solid aliceblue; color: var(--Green);"> 
             <div id="RarityLabel" class="label"> RARITY </div> 
+            <!-- Cerca menù accordion come partenza -->
         </div>
         
         <div id="TeamDiv" style="height: 50vw; border: 5px solid aliceblue; color: var(--Green);"> 
@@ -72,9 +85,8 @@
         </div>
 
         <div id="Animation">
-            <img id="StartLogo" src="Img/LOGO.png" ></img>
+            <img src="Img/LOGO.png" style=" width: calc(100vw / 3); height: auto;"></img>
         </div>    
-    </div>
     <script src="Script.js"></script>
 </body>
 </html>
