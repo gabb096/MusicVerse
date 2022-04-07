@@ -15,62 +15,87 @@
 
         <div id="StoryDiv" style="height: auto;"> <!-- "Fatto" -->
             
-        <div id="StoryFrame">
-            <img id="StoryImg" src="Img/cornice testo storia composto 72.png" style=" width: 100vw;"></img>
-                <h5 id="StoryLabel">STORY</h5> 
+            <div class="StoryFrame">
+                <img src="Img/cornice testo storia composto 72.png" style=" width: 100vw; grid-column: 1; grid-row: 1;"></img>
+                    <h5 class="StoryLabel">STORY</h5> 
 
-                <div id="StoryText">
-                     <p>
-                        Ros Trevin indice un concorso per la selezione di sei giovani produttori/gruppi techno europei. 
-                        Ai vincitori viene rilasciato il pass per l’evento più in voga dell’anno organizzato da Vesil Dreko che vedrà come guest proprio il dj tedesco. 
-                        I vincitori, entusiati dell’occasione a loro offerta, partiranno per Berlino ignari del grande destino che li aspetta. 
-                        Arrivati nella capitale europea della musica techno raggiungeranno il “Musicverse hotel” a loro designato dall’organizzazione dell’evento, dove avranno modo di conoscersi meglio grazie ad una jam. 
-                        Nel giro di pochi minuti, in preda all’estasi, l’euforia diventa incontrollabile ed i giovani vengono cacciati dalla security dell’hotel. 
-                        Il viaggio continua e i sei decidono di avviarsi verso l’evento dove scopriranno il vero motivo del loro invito a Berlino.
-                    </p>
+                    <div id="StoryText">
+                        <p>
+                            Ros Trevin indice un concorso per la selezione di sei giovani produttori/gruppi techno europei. 
+                            Ai vincitori viene rilasciato il pass per l’evento più in voga dell’anno organizzato da Vesil Dreko che vedrà come guest proprio il dj tedesco. 
+                            I vincitori, entusiati dell’occasione a loro offerta, partiranno per Berlino ignari del grande destino che li aspetta. 
+                            Arrivati nella capitale europea della musica techno raggiungeranno il “Musicverse hotel” a loro designato dall’organizzazione dell’evento, dove avranno modo di conoscersi meglio grazie ad una jam. 
+                            Nel giro di pochi minuti, in preda all’estasi, l’euforia diventa incontrollabile ed i giovani vengono cacciati dalla security dell’hotel. 
+                            Il viaggio continua e i sei decidono di avviarsi verso l’evento dove scopriranno il vero motivo del loro invito a Berlino.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div id="Video">
-                <img id="VideoFrame" src="Img/CORNICE trailer 72.png" style="width: 100vw;"></img>
-               
-                <iframe id="VideoSource" src="https://www.youtube.com//embed/dQw4w9WgXcQ?autoplay=1&mute=1" allow='autoplay' style="width: 55vw; height: 30vw; border-radius: 2vw;"></iframe>
-            </div>
-           
-            
+                <div class="Video">
+                    <img class="VideoFrame" src="Img/CORNICE trailer 72.png" style="width: 100vw;"></img>
+                    <iframe id="VideoSource" src="https://www.youtube.com//embed/dQw4w9WgXcQ?autoplay=1&mute=1" allow='autoplay' style="width: 55vw; height: 30vw; border-radius: 2vw;"></iframe>
+                </div>     
         </div>
 
         <div id="RoadmapDiv" style="height: 50vw; border: 5px solid aliceblue; color: var(--Green);"> 
-            <div id="RoadMapLabel" class="label"> 
+            <div class="label"> 
                 <h5>ROADMAP</h5> 
             </div> 
         </div>
 
         <div id="CharactersDiv"> 
-            <div id="CharactersLabel" class="label">CHARACTERS</div> 
-                <div id="CharacterImg"></div>
-                <div id="CharacterStory"></div>
-                <img id="CharacterFrame" src="Img/forma personaggi.png" style=" width: 100vw;"></img>
-                <div id="CharacterSelector">
+            <div class="CharactersLabel label">
+                <h5>CHARACTERS</h5>
+            </div> 
+                <div class="CharacterImg"></div>
+                <div class="CharacterStory"></div>
+                <img class="CharacterFrame" src="Img/forma personaggi.png" style=" width: 100vw;"></img>
+                <div class="CharacterSelector">
                     <div class="CharacterMiniImg"></div>
-                    <div class="CharacterMiniImgDouble"></div>
+                    <div class="CharacterMiniImg Double"></div>
                     <div class="CharacterMiniImg"></div>
                     <div class="CharacterMiniImg"></div>
                     <div class="CharacterMiniImg"></div>
-                    <div class="CharacterMiniImgDouble"></div>
+                    <div class="CharacterMiniImg Double"></div>
                     <div class="CharacterMiniImg"></div>
                 </div>
         </div>
 
         <div id="RarityDiv" style="height: 50vw; border: 5px solid aliceblue; color: var(--Green);"> 
-            <div id="RarityLabel" class="label"> RARITY </div> 
+            <div class="label"> 
+                <h5>RARITY</h5>
+            </div> 
             <!-- Cerca menù accordion come partenza -->
         </div>
         
-        <div id="TeamDiv" style="height: 50vw; border: 5px solid aliceblue; color: var(--Green);"> 
-            <div id="TeamLabel" class="label"> TEAM </div> 
+        <div id="TeamDiv" style=" background-image: linear-gradient(white, black);"> 
+            <div class="label"> 
+                <h5>TEAM</h5>
+            </div> 
+            <div class="TeamSelector">
+                <div class="TeamName"> <h3>Founders</h3> </div>
+                <div class="TeamName"> <h3>Grafici</h3> </div>
+                <div class="TeamName"> <h3>Illustratori</h3> </div>
+                <div class="TeamName"> <h3>CGI</h3> </div>
+                <div class="TeamName"> <h3>Sound Designer</h3> </div>
+                <div class="TeamName"> <h3>Art Director</h3> </div>
+                <div class="TeamName"> <h3>Programmatori</h3> </div>
+                <div class="TeamName"> <h3>Sviluppatori</h3> </div>
+                <div class="TeamName"> <h3>Social Media Manager</h3> </div>
+            </div>
+            <div class="TeamAvatarArea">
+                <div class="AvatarImg">
+                    <h4 class="AvatarName">SAS</h4>
+                </div>
+                <div class="AvatarImg">
+                    <h4 class="AvatarName">SES</h4>
+                </div>
+                <div class="AvatarImg">
+                    <h4 class="AvatarName">SOS</h4>
+                </div>
+            </div>
         </div>
         
-        <div id="CopyrightDiv" style="height: 30vw; border: 5px solid aliceblue; color: var(--Green);"> Copyright </div>
+        <!-- <div id="CopyrightDiv" style="height: 30vw; border: 5px solid aliceblue; color: var(--Green);"> Copyright </div> -->
 
         <div id="MenuBar"> <!-- Cambiare in button --> 
             <div class="MenuItem"> <h2>Home</h2> </div>
