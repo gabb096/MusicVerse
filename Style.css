@@ -20,14 +20,14 @@
     100% {background-color: var(--Black); opacity: 0;}
 }
 @font-face {
-    font-family: "Stapel medium";
+    font-family: "Stapel Regular";
     font-weight: normal;
-    src: url("Utils/Stapel_Condensed\ Medium.otf") format("opentype");
+    src: url("Utils/Stapel_Regular.otf") format("opentype");
 }
 @font-face {
-    font-family: "Stapel";
+    font-family: "Stapel Bold";
     font-weight: normal;
-    src: url("Utils/Stapel_Semi\ Expanded\ Medium.otf") format("opentype");
+    src: url("Utils/Stapel_Expanded\ Bold.otf") format("opentype");
 }
 body{
     background-color: var(--Black);
@@ -36,13 +36,9 @@ body{
 h2{
     color: var(--White);
     cursor: pointer;
+    display: inline;
 }
-h5{
-    color: var(--Green);
-    font-size: 4vw;
-    font-family: "Stapel medium";  
-    text-shadow: 0 0 1vw var(--Green), 0 0 .2vw var(--White); 
-}
+
 #MainArea{
     display: flex;
     flex-direction: column;
@@ -50,17 +46,24 @@ h5{
     justify-content: center;
 }
 .label{
+    position:relative; 
+    left: 25vw;
+    text-align: center;
+    width: 23vw;
+    height: 6vw;
+}
+.labelText{ 
     position: relative;
-    left:20vw;
-    width:20vw;
-    height: 9vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url("Img/ETICHETTA.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+    bottom: 4.5vw;
+    color: var(--Green);
+    font-size: 2vw;
+    font-family: "Stapel Bold";  
+    text-shadow: 0 0 1vw var(--Green), 0 0 .2vw var(--White); 
+}
+.labelImg{
+    width: 23vw;
+    height: 6vw;
+    object-fit: fill;
 }
 /* ==================================================================================================================== */
 #Animation{
@@ -74,7 +77,7 @@ h5{
     align-items: center;
     justify-content: center;
     animation-name: Sequence;
-    animation-duration: 4s;
+    animation-duration: 6s;
     animation-iteration-count: 1;
     z-index: 9999;
 }
@@ -100,9 +103,9 @@ h5{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: 1vw;
-    font-family: "Stapel";
+    justify-content: center; 
+    font-size: 1.05vw;
+    font-family: "Stapel Regular";
 }
 .MyCircle{
     width: 6.5vw;
@@ -114,58 +117,65 @@ h5{
     position: relative;
     width: 5.5vw;
     height: 5vw;
-    background-image: url("Img/ICONA LOGO.png");
+    background-image: url("Img/Logo.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 /* ==================================================================================================================== */
 #StoryDiv{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.StoryFrame{
     display: grid;
-    z-index: 20;
+    background-image: url("Img/Story_Background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .StoryLabel{
+    position: relative;
     grid-column: 1;
     grid-row: 1;
-    position: relative;
-    left: 33vw;
+    left: 31vw;
     top: 1vw;
+    height: fit-content;
 }
-
 #StoryText{
-    grid-column: 1;
-    grid-row: 1;
     position: relative;
-    left: 13vw;
+    left: 17vw;
     top: 40vw;
-    width: 73vw;
+    width: 65vw;
+    height: fit-content;
+    grid-column: 1;
+    grid-row: 1;
     color: var(--White); 
-    font-size: 2.5vw; 
-    font-family: "Stapel medium";
+    font-size: 2vw; 
+    font-family: "Stapel Regular";
 }
-.Video{
+.VideoHelp{
     position: relative;
-    bottom: 0.2vw;
-    display: grid;
-}
-.VideoFrame{
+    left: 22vw;
+    top: .8vw;
+    width: 56.5vw; 
+    height: 32vw; 
     grid-column: 1;
-    grid-row: 1;
-    position: relative;
-    bottom: 0.5vw;
-}
-#VideoSource{
-    grid-column: 1;
-    grid-row: 1;
-    position: relative;
-    top: 1.5vw;
-    left: 23vw;
+    grid-row: 2;
+    border-radius: 2vw; 
+    background-color: black;
+    z-index: 16;
 } 
+.VideoFrame{
+    position: relative;
+    bottom: 0.8vw;
+    grid-column: 1;
+    grid-row: 2;
+    z-index: 17;
+}
+.VideoSource{
+    position: relative;
+    grid-column: 1;
+    grid-row: 2;
+    left: 23.1vw;
+    top: 2vw;
+    z-index: 18;
+}
 /* ==================================================================================================================== */
 #CharactersDiv{
     display: grid;
@@ -175,36 +185,37 @@ h5{
     grid-column: 1;
 }
 .CharacterFrame{
-    grid-row: 1;
+    grid-row: 2;
     grid-column: 1;
     z-index: 10;
 }
 .CharacterImg{
     position: relative;
-    left: 14vw;
-    top: 9vw;
-    grid-row: 1;
+    left: 16vw;
+    top: 1.5vw;
+    grid-row: 2;
     grid-column: 1;
-    width: 27.5vw;
-    height: 35vw;
-    background-color: aliceblue;
+    width: 26vw;
+    height: 28.5vw;
+    background-color:rgb(212, 215, 35);
 }
 .CharacterStory{
     position: relative;
-    top: 9vw;
-    left: 42vw;
-    grid-row: 1;
+    top: 3vw;
+    left: 44vw;
+    grid-row: 2;
     grid-column: 1;
-    width: 53vw;
-    height: 32vw;
-    background-color: red;
+    width: 45vw;
+    height: 22vw;
+    background-color: rgb(24,187,77);
 }
 .CharacterSelector{
     position: relative;
     left: 25vw;
+    top: 5vw;
     width: 50vw;
     height: 7vw;
-    grid-row: 2;
+    grid-row: 3;
     grid-column: 1;
     border-radius: 5vw;
     background-color: var(--Green);
@@ -235,7 +246,6 @@ h5{
     width: 8.5vw;
     height: 6.5vw;
 }
-
 /* ==================================================================================================================== */
 .TeamSelector{
     position: relative;
@@ -249,10 +259,8 @@ h5{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 1vw;
     box-shadow: 0 0 .5vw .2vw var(--Green), 0 0 .2vw .1vw var(--White);   
-}
-.TeamName{
-    margin: .5vw;
 }
 .TeamName:hover{
     cursor: pointer;
@@ -260,20 +268,21 @@ h5{
 h3{
     color: var(--White);
     font-size: 1.2vw;
-    font-family: "Stapel";  
-}
+    font-family: "Stapel Regular";  
+    text-align: center
+} 
 .TeamAvatarArea{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 6vw;
 }
 .AvatarImg{
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 3vw;
     width: 15vw;
     height: 20vw;
     background-color: blue;
@@ -283,5 +292,6 @@ h3{
     top: 22vw;
     color: var(--White);
     font-size: 1.2vw;
-    font-family: "Stapel";  
+    font-family: "Stapel Regular";  
+    text-align: center
 }

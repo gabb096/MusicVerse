@@ -7,9 +7,9 @@ const MenuBarHeight = ScreenWidth * 0.07;
 /* == Rimozione animazione e preparazione barra menu == */
 
 setTimeout( ()=>{ DOM_MenuBar.style.top = "0px"; }, 3700);
-setTimeout( ()=>{ DOM_Animation.remove(); }, 4000);
+setTimeout( ()=>{ DOM_Animation.remove(); }, 6000);
 
-/* == Scorrimento barra menù == */
+/* ========== barra menù ============================== */
 
 const DOM_HomeDiv = document.getElementById(`Home`);
 const DOM_StoryDiv = document.getElementById(`StoryDiv`);
@@ -47,7 +47,28 @@ for(let i=0; i<MenuItemsName.length; i++)
     });
 }
 
-/* == Selezione dei vari team == */
+/* ========== Selezione dei vari character ============================== */
+
+const DOM_CharacterImg = document.querySelector(".CharacterImg");
+const DOM_CharacterStory = document.querySelector(".CharacterStory");
+const DOM_CharacterFrame = document.querySelector(".CharacterFrame");
+const DOM_CharacterMiniImg = document.querySelectorAll(".CharacterMiniImg");
+
+for(let i=0; i<DOM_CharacterMiniImg.length; i++)
+{
+    DOM_CharacterMiniImg[i].addEventListener("click", function() 
+    {
+        if(i == 1 || i == 5)
+            DOM_CharacterFrame.src = "Img/CharacterFrameDouble.png";
+        else
+            DOM_CharacterFrame.src = "Img/CharacterFrameSingle.png";
+        
+        // DOM_CharacterStory.innerHTML = ; 
+    });
+}
+
+
+/* ========== Selezione dei vari team ============================== */
 
 const DOM_TeamName = document.querySelectorAll(`.TeamName`);
 const DOM_TeamAvatarArea = document.querySelector(`.TeamAvatarArea`);
@@ -80,3 +101,4 @@ for(let i=0; i<DOM_TeamName.length; i++)
 
     });
 }
+
