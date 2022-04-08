@@ -38,7 +38,6 @@ h2{
     cursor: pointer;
     display: inline;
 }
-
 #MainArea{
     display: flex;
     flex-direction: column;
@@ -201,13 +200,13 @@ h2{
 }
 .CharacterStory{
     position: relative;
-    top: 3vw;
+    top: 4vw;
     left: 44vw;
     grid-row: 2;
     grid-column: 1;
-    width: 45vw;
+    width: 38vw;
     height: 22vw;
-    background-color: rgb(24,187,77);
+    /* background-color: rgb(24,187,77);  */
 }
 .CharacterSelector{
     position: relative;
@@ -245,6 +244,15 @@ h2{
 .Double:hover{
     width: 8.5vw;
     height: 6.5vw;
+}
+.textWhite{
+    color: var(--White);
+    font-size: 1.7vw;
+    font-family: "Stapel Regular";  
+    text-align: left;
+}
+.textGreen{
+    color: var(--Green);
 }
 /* ==================================================================================================================== */
 .TeamSelector{

@@ -63,7 +63,7 @@ for(let i=0; i<DOM_CharacterMiniImg.length; i++)
         else
             DOM_CharacterFrame.src = "Img/CharacterFrameSingle.png";
         
-        // DOM_CharacterStory.innerHTML = ; 
+        DOM_CharacterStory.innerHTML = CharacterStoryTexts[i]; 
     });
 }
 
