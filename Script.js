@@ -2,7 +2,7 @@ let DOM_Animation = document.getElementById(`Animation`);
 const DOM_MenuBar = document.getElementById(`MenuBar`);
 
 const ScreenWidth = window.innerWidth;
-const MenuBarHeight = ScreenWidth * 0.07;
+const MenuBarHeight = ScreenWidth * 0.05;
 
 /* == Rimozione animazione e preparazione barra menu == */
 

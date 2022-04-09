@@ -1,6 +1,7 @@
 const CharacterStoryTexts = [];
 //0
-CharacterStoryTexts.push(`<h4 class="textWhite">  <span class="textGreen"> VESIL DREKO </span> (Russia)</h4>
+CharacterStoryTexts.push(`
+<h4 class="textWhite">  <span class="textGreen"> VESIL DREKO </span> (Russia)</h4>
 <br>
 <p class="textWhite">
 Si trasferisce con i propri genitori a Berlino nella prima adolescenza, per scappare 
@@ -8,7 +9,8 @@ dal comunismo russo. Anche per questo cresce diffidente nei confronti della soci
 il proprio dualismo interiore riversa la sua frustrazione nell’eccesso ed entra a far parte di un’organizzazione di eventi techno.   
 </p>`);
 //1
-CharacterStoryTexts.push(`<h4 class="textWhite">  <span class="textGreen"> GABRIELLE & MONICA </span> (Francia, Brasile)</h4>
+CharacterStoryTexts.push(`
+<h4 class="textWhite">  <span class="textGreen"> GABRIELLE & MONICA </span> (Francia, Brasile)</h4>
 <br>
 <p class="textWhite">
 Gabrielle è una violoncellista francese a cui piace divertirsi, è una ragazza fortemente empatica 
@@ -16,7 +18,8 @@ che ama sperimentare nuove tecniche e nuove sonorità. Crescendo vicino a Parigi
 e jammando capiranno che i loro stili apparentemente diversi possano tranquillamente coesistere generando qualcosa di nuovo ed unico.  
 </p>`);
 //2
-CharacterStoryTexts.push(`<h4 class="textWhite">  <span class="textGreen"> ANVIL </span> (Germania)</h4>
+CharacterStoryTexts.push(`
+<h4 class="textWhite">  <span class="textGreen"> ANVIL </span> (Germania)</h4>
 <br>
 <p class="textWhite">
 Ragazza tedesca, già dalla prima adolescenza vive l’ambiente techno berlinese underground e ne diventa subito protagonista. 
@@ -25,7 +28,8 @@ traumi del passato.
     
 </p>`);
 //3
-CharacterStoryTexts.push(`<h4 class="textWhite">  <span class="textGreen"> RÖS TREVIN </span> (Germania)</h4>
+CharacterStoryTexts.push(`
+<h4 class="textWhite">  <span class="textGreen"> RÖS TREVIN </span> (Germania)</h4>
 <br>
 <p class="textWhite">
     Ha una personalità forte e imprenditoriale, ma ciò non gli ha negato di fare molte esperienze nella vita. 
@@ -43,7 +47,8 @@ A 25 anni coglierà al balzo l’occasione a lui concessa da Rös Trevin e parti
    
 </p>`);
 //5
-CharacterStoryTexts.push(`<h4 class="textWhite">  <span class="textGreen"> OLLECTIVE HUSTLE </span> (Italia)</h4>
+CharacterStoryTexts.push(`
+<h4 class="textWhite">  <span class="textGreen"> OLLECTIVE HUSTLE </span> (Italia)</h4>
 <br>
 <p class="textWhite">
 2 ragazzi pugliesi di 16 e 19 anni hanno voglia di cambiare le cose e decidono di prendersi quello che gli è sempre mancato. 
@@ -56,7 +61,8 @@ Il talento di Luca spronerà Matteo a suonare con lui.  I due a causa del loro s
 Una notte, dopo aver scoperto di aver vinto  il contest ruberanno un camper per raggiungere Berlino.
 </p>`);
 //6
-CharacterStoryTexts.push(`<h4 class="textWhite">  <span class="textGreen"> CYBER_BOT </span> (Multiversi)</h4>
+CharacterStoryTexts.push(`
+<h4 class="textWhite">  <span class="textGreen"> CYBER_BOT </span> (Multiversi)</h4>
 <br>
 <p class="textWhite">
 Cyber Narratore creato da uno scienziato con scarti delle apparecchiature audio e video usate negli anni '80, 
