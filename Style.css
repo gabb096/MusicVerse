@@ -181,6 +181,10 @@ h2{
 /* ==================================================================================================================== */
 #CharactersDiv{
     display: grid;
+    background-image: url("img/Story_Background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .CharactersLabel{
     grid-row: 1;
@@ -188,7 +192,9 @@ h2{
 }
 .CharacterFrame{
     position: relative;
-    width: 100vw;
+    left:5vw;
+    Bottom: 5vw;
+    width: 30vw;
     grid-row: 2;
     grid-column: 1;
     z-index: 10;
@@ -196,27 +202,29 @@ h2{
 }
 .CharacterImg{
     position: relative;
-    left: 16vw;
+    left: 12vw;
+    top: 9.7vw;
+    width:  16vw;
+    height: 16vw;
     grid-row: 2;
     grid-column: 1;
-    width: 26vw;
-    height: 28.5vw;
-    background-color:rgb(212, 215, 35);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .CharacterStory{
     position: relative;
-    top: 2.5vw;
-    left: 44vw;
+    top: 4vw;
+    left: 37vw;
     grid-row: 2;
     grid-column: 1;
-    width: 38vw;
-    height: 22vw;
+    width: 55vw;
+    height: 30vw;
     /* background-color: rgb(24,187,77);  */
 }
 .CharacterSelector{
     position: relative;
     left: 25vw;
-    top: 2vw; 
     width: 50vw;
     height: 7vw;
     grid-row: 3;
@@ -234,7 +242,10 @@ h2{
     width: 5vw;
     height: 5vw;
     border-radius: 50%;
-    background-color: var(--DarkGrey);
+    /* background-color: var(--DarkGrey); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     transition: all .2s;
 }
 .CharacterMiniImg:hover{

@@ -53,15 +53,31 @@ const DOM_CharacterImg = document.querySelector(".CharacterImg");
 const DOM_CharacterStory = document.querySelector(".CharacterStory");
 const DOM_CharacterFrame = document.querySelector(".CharacterFrame");
 const DOM_CharacterMiniImg = document.querySelectorAll(".CharacterMiniImg");
+const Characters = ["VESIL", "Double1", "ANVIL", "ROSS", "ERIK", "Double2", "CYBERBOT"]; 
 
 for(let i=0; i<DOM_CharacterMiniImg.length; i++)
 {
+
     DOM_CharacterMiniImg[i].addEventListener("click", function() 
     {
         if(i == 1 || i == 5)
+        {
             DOM_CharacterFrame.src = "Img/CharacterFrameDouble.png";
+            DOM_CharacterImg.style.left = "13.5vw";
+            DOM_CharacterImg.style.top = "9.5vw";
+            DOM_CharacterImg.style.width =  "16vw";
+            DOM_CharacterImg.style.height = "29.5vw";
+            DOM_CharacterImg.style.backgroundImage = `url(Img/Characters/${Characters[i]}.png)`;
+        }
         else
+        {
             DOM_CharacterFrame.src = "Img/CharacterFrameSingle.png";
+            DOM_CharacterImg.style.left = "12vw";
+            DOM_CharacterImg.style.top = "9.7vw";
+            DOM_CharacterImg.style.width =  "16vw";
+            DOM_CharacterImg.style.height = "16vw";
+            DOM_CharacterImg.style.backgroundImage = `url(Img/Characters/${Characters[i]}.png)`;
+        }
         
         DOM_CharacterStory.innerHTML = CharacterStoryTexts[i]; 
     });
@@ -81,7 +97,7 @@ const AvatarNames = [ ["Nick 1", "Nick 2", "Nick 3"],
                     ["David Manieranera"],
                     ["Gabriele Leva", "Corrado Tribioli", "Maurizio Venere", "Lorenzo Elia"],
                     ["Stiamo", "Cercando","Sviluppatori"],
-                    ["Cercando", "Social Media Manager", "Stiamo"] ];
+                    ["Social", " Media", "Manager"] ];
 
 let string, rgb;
 for(let i=0; i<DOM_TeamName.length; i++)
