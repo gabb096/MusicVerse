@@ -91,7 +91,7 @@ const DOM_TeamAvatarArea = document.querySelector(`.TeamAvatarArea`);
 
 const AvatarNames = [ ["Nick 1", "Nick 2", "Nick 3"],
                     ["Giovanni Pietanza", "Mario Capotorto"],
-                    ["Elisa Giusepponi", "Angelo Scarpa", "Gaia Magnini"],
+                    ["Elisa Giusepponi", "Angelo Scarpa"],
                     ["Edoardo Grassi", "Gaetano Patanè", "Leonardo Del Casale"],
                     ["Domenico Verga", "Giulia Vittoria Panchetti"],
                     ["David Manieranera"],
